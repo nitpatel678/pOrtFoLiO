@@ -33,7 +33,7 @@ export default function About() {
         className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
       >
         <motion.div variants={itemVariants} className="order-2 md:order-1">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 gradient-text">
+          <h2 id="subheading" className="text-3xl md:text-4xl font-bold mb-6 gradient-text">
             About Me
           </h2>
           <p className="text-white/80 mb-4 text-lg">

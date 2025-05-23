@@ -8,21 +8,21 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "Project Mate",
       description:
-        "A full-featured e-commerce platform built with React, Node.js, and MongoDB. Features include user authentication, product search, cart functionality, and payment processing.",
+        "A platform where developers can discover, contribute, and collaborate on real-world open source projects. Features include project discovery, skill tagging, contribution tracking, and GitHub integration.",
       image:
         "https://github.com/nitpatel678/myportfolio/blob/main/src/Images/ProjectMate_Orange.png?raw=true",
-      tags: ["React", "Node.js", "MongoDB", "Stripe"],
+      tags: ["React", "Node.js", "MongoDB", "GitHub API"],
       links: {
         demo: "https://example.com",
         github: "https://github.com",
       },
     },
     {
-      title: "AI Content Generator",
+      title: "Cortex (AI Agent)",
       description:
-        "An AI-powered content generation tool that helps users create blog posts, social media content, and more. Built with React, OpenAI API, and Firebase.",
+        "An AI-powered assistant that helps users generate blog posts, social media content, and marketing copy. Built with React, OpenAI API, and Firebase for authentication and database support.",
       image: "/placeholder.svg",
       tags: ["React", "OpenAI", "Firebase", "Tailwind CSS"],
       links: {
@@ -31,11 +31,11 @@ export default function Projects() {
       },
     },
     {
-      title: "3D Portfolio Visualizer",
+      title: "Blockchain Decentralized Banking Project",
       description:
-        "A 3D visualization tool for portfolio analysis, built with Three.js and React. Allows users to visualize their investment portfolio in an interactive 3D environment.",
+        "A decentralized banking platform using Ethereum smart contracts. Provides wallet authentication, secure transfers, and a real-time transaction dashboard with Three.js visualizations.",
       image: "/placeholder.svg",
-      tags: ["React", "Three.js", "D3.js", "TypeScript"],
+      tags: ["React", "Ethereum", "Three.js", "Solidity"],
       links: {
         demo: "https://example.com",
         github: "https://github.com",
@@ -70,7 +70,7 @@ export default function Projects() {
         className="space-y-20"
       >
         <motion.div variants={itemVariants} className="text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 gradient-text">
+          <h2 id="subheading" className="text-3xl md:text-4xl font-bold mb-6 gradient-text">
             Featured Projects
           </h2>
           <p className="text-white/80 max-w-2xl mx-auto">
@@ -98,7 +98,7 @@ export default function Projects() {
                       <span className="w-3 h-3 rounded-full bg-yellow-500"></span>
                       <span className="w-3 h-3 rounded-full bg-green-500"></span>
                     </div>
-                    <span className="text-xs text-white/60 font-poppins text-center flex-1">
+                    <span className="text-xs text-white/60 font-poppins text-center flex-1 truncate">
                       {project.title}
                     </span>
                     <div className="w-6" />
@@ -118,7 +118,7 @@ export default function Projects() {
 
               {/* Text content */}
               <div className="w-full md:w-2/5 space-y-4">
-                <h3 className="text-2xl font-bold">{project.title}</h3>
+                <h3 id="subheading" className="text-2xl font-bold">{project.title}</h3>
                 <p className="text-white/80">{project.description}</p>
 
                 <div className="flex flex-wrap gap-2 my-4">

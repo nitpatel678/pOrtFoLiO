@@ -22,6 +22,7 @@ export default function Hero() {
     >
       <motion.div style={{ y }} className="text-center z-10 px-4">
         <motion.h1
+        id="heading"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -34,6 +35,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
+          id="subheading"
           className="text-xl md:text-2xl lg:text-3xl text-white/80 mb-10 font-poppins"
         >
           Full-Stack Developer & UI/UX Designer

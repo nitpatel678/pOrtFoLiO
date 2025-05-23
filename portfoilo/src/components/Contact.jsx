@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin, Instagram } from "lucide-react";
 
 export default function Contact() {
   const ref = useRef(null);
@@ -64,7 +64,7 @@ export default function Contact() {
         className="w-full"
       >
         <motion.div variants={itemVariants} className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 gradient-text">Get In Touch</h2>
+          <h2 id="subheading" className="text-3xl md:text-4xl font-bold mb-6 gradient-text">Get In Touch</h2>
           <p className="text-white/80 max-w-2xl mx-auto">
             Have a project in mind or want to discuss potential opportunities? Feel free to reach out. I'm always open
             to new ideas and collaborations.
@@ -73,7 +73,7 @@ export default function Contact() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <motion.div variants={itemVariants} className="space-y-8">
-            <h3 className="text-xl font-bold font-poppins">Contact Information</h3>
+            <h3 id="subheading" className="text-xl font-bold font-poppins">Contact Information</h3>
 
             <div className="space-y-4">
               <div className="flex items-center gap-4">
@@ -82,36 +82,20 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-white/60 font-poppins">Email</p>
-                  <p>hello@johndoe.com</p>
+                  <p>nitpatel678@gmail.com</p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-4">
-                <div className="p-3 bg-white/10 rounded-full">
-                  <Phone size={20} />
-                </div>
-                <div>
-                  <p className="text-sm text-white/60 font-poppins">Phone</p>
-                  <p>+1 (555) 123-4567</p>
-                </div>
-              </div>
+              
 
-              <div className="flex items-center gap-4">
-                <div className="p-3 bg-white/10 rounded-full">
-                  <MapPin size={20} />
-                </div>
-                <div>
-                  <p className="text-sm text-white/60 font-poppins">Location</p>
-                  <p>San Francisco, CA</p>
-                </div>
-              </div>
+              
             </div>
 
             <div>
-              <h3 className="text-xl font-bold mb-4 font-poppins">Connect With Me</h3>
+              <h3 id="subheading" className="text-xl font-bold mb-4 font-poppins">Connect With Me</h3>
               <div className="flex gap-4">
                 <motion.a
-                  href="https://github.com"
+                  href="https://github.com/nitpatel678"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1 }}
@@ -121,7 +105,7 @@ export default function Contact() {
                 </motion.a>
 
                 <motion.a
-                  href="https://linkedin.com"
+                  href="https://linkedin.com/in/nitinpatelftp"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1 }}
@@ -131,13 +115,13 @@ export default function Contact() {
                 </motion.a>
 
                 <motion.a
-                  href="https://twitter.com"
+                  href="https://instagram.com/nitin_rave"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1 }}
                   className="p-3 bg-white/10 rounded-full hover:bg-white/20 transition-colors"
                 >
-                  <Twitter size={20} />
+                  <Instagram size={20} />
                 </motion.a>
               </div>
             </div>
@@ -227,7 +211,7 @@ export default function Contact() {
         </div>
 
         <motion.div variants={itemVariants} className="mt-20 text-center text-white/60 text-sm">
-          <p>© {new Date().getFullYear()} John Doe. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Nitin Patel. All rights reserved.</p>
         </motion.div>
       </motion.div>
     </section>

@@ -49,7 +49,7 @@ export default function Navbar() {
           transition={{ delay: 0.2 }}
           className="text-2xl font-bold logo-text"
         >
-          <span className="gradient-text">Nitin</span>
+          <span className="gradient-text tracking-widest font-bold text-2xl">Nitin</span>
         </motion.div>
 
         {/* Desktop Navigation */}

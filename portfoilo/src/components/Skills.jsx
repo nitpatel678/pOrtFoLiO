@@ -2,7 +2,28 @@
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { Code, Palette, Database, Globe, Server } from "lucide-react";
+import {
+  Code,
+  Server,
+  Database,
+  Palette,
+  Globe,
+  Atom,
+  FileCode,
+  Box,
+  GitBranch,
+  Cloud,
+  Flame,
+  LayoutGrid,
+  List,
+  Share,
+  Component,
+  BarChart3,
+  TestTube2,
+  RefreshCw,
+  Triangle,
+  Activity,
+} from "lucide-react";
 
 export default function Skills() {
   const ref = useRef(null);
@@ -12,10 +33,10 @@ export default function Skills() {
     {
       title: "Frontend Development",
       skills: [
-        { name: "React", level: 90, icon: <Code size={20} /> },
-        { name: "TypeScript", level: 85, icon: <Code size={20} /> },
+        { name: "React", level: 90, icon: <Atom size={20} /> },
+        { name: "Javascript", level: 85, icon: <FileCode size={20} /> },
         { name: "HTML/CSS", level: 95, icon: <Code size={20} /> },
-        { name: "Three.js", level: 75, icon: <Code size={20} /> },
+        { name: "Three.js", level: 75, icon: <Triangle size={20} /> },
       ],
     },
     {
@@ -28,14 +49,29 @@ export default function Skills() {
       ],
     },
     {
-      title: "Design & UI/UX",
+      title: "Other Tech Stack",
       skills: [
-        { name: "Figma", level: 85, icon: <Palette size={20} /> },
-        { name: "UI Design", level: 80, icon: <Palette size={20} /> },
-        { name: "Animation", level: 75, icon: <Palette size={20} /> },
-        { name: "Responsive Design", level: 90, icon: <Globe size={20} /> },
+        { name: "Java", level: 85, icon: <Flame size={20} /> },
+        { name: "Ethereum", level: 80, icon: <Globe size={20} /> },
+        { name: "Docker", level: 75, icon: <Box size={20} /> },
+        { name: "RAG", level: 90, icon: <Activity size={20} /> },
       ],
     },
+  ];
+
+  const otherTechnologies = [
+    { name: "Git", icon: <GitBranch size={16} /> },
+    { name: "Docker", icon: <Box size={16} /> },
+    { name: "AWS", icon: <Cloud size={16} /> },
+    { name: "Firebase", icon: <Flame size={16} /> },
+    { name: "GraphQL", icon: <LayoutGrid size={16} /> },
+    { name: "Redux", icon: <Share size={16} /> },
+    { name: "Next.js", icon: <List size={16} /> },
+    { name: "Tailwind CSS", icon: <Component size={16} /> },
+    { name: "Jest", icon: <TestTube2 size={16} /> },
+    { name: "CI/CD", icon: <RefreshCw size={16} /> },
+    { name: "WebGL", icon: <Triangle size={16} /> },
+    { name: "GSAP", icon: <BarChart3 size={16} /> },
   ];
 
   const containerVariants = {
@@ -67,7 +103,7 @@ export default function Skills() {
         className="w-full"
       >
         <motion.div variants={itemVariants} className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 gradient-text">
+          <h2 id="subheading" className="text-3xl md:text-4xl font-bold mb-6 gradient-text">
             Skills & Expertise
           </h2>
           <p className="text-white/80 max-w-2xl mx-auto">
@@ -83,7 +119,7 @@ export default function Skills() {
               variants={itemVariants}
               className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10"
             >
-              <h3 className="text-xl font-bold mb-6 font-poppins">{category.title}</h3>
+              <h3 id="subheading" className="text-xl font-bold mb-6 font-poppins">{category.title}</h3>
 
               <div className="space-y-6">
                 {category.skills.map((skill) => (
@@ -114,28 +150,16 @@ export default function Skills() {
         </div>
 
         <motion.div variants={itemVariants} className="mt-16 text-center">
-          <h3 className="text-xl font-bold mb-6 font-poppins">Other Technologies</h3>
+          <h3 id="subheading" className="text-xl font-bold mb-6 font-poppins">Also Familiar With</h3>
           <div className="flex flex-wrap justify-center gap-3">
-            {[
-              "Git",
-              "Docker",
-              "AWS",
-              "Firebase",
-              "GraphQL",
-              "Redux",
-              "Next.js",
-              "Tailwind CSS",
-              "Jest",
-              "CI/CD",
-              "WebGL",
-              "GSAP",
-            ].map((tech) => (
+            {otherTechnologies.map((tech) => (
               <motion.span
-                key={tech}
+                key={tech.name}
                 whileHover={{ scale: 1.05 }}
-                className="px-4 py-2 bg-white/10 rounded-full text-sm font-poppins"
+                className="px-4 py-2 bg-white/10 rounded-full text-sm font-poppins flex items-center gap-2"
               >
-                {tech}
+                {tech.icon}
+                {tech.name}
               </motion.span>
             ))}
           </div>

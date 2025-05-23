@@ -103,7 +103,7 @@ function MovingPlanes() {
             color="#ffffff"
             wireframe
             transparent
-            opacity={0.1}
+            opacity={0.02}
           />
         </mesh>
       ))}
