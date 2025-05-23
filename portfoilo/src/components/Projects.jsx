@@ -23,7 +23,7 @@ export default function Projects() {
       title: "Cortex (AI Agent)",
       description:
         "An AI-powered assistant that helps users generate blog posts, social media content, and marketing copy. Built with React, OpenAI API, and Firebase for authentication and database support.",
-      image: "/placeholder.svg",
+      image: "https://github.com/nitpatel678/pOrtFoLiO/blob/main/portfoilo/src/assets/cortex.jpg?raw=true",
       tags: ["React", "OpenAI", "Firebase", "Tailwind CSS"],
       links: {
         demo: "https://example.com",
@@ -34,7 +34,7 @@ export default function Projects() {
       title: "Blockchain Decentralized Banking Project",
       description:
         "A decentralized banking platform using Ethereum smart contracts. Provides wallet authentication, secure transfers, and a real-time transaction dashboard with Three.js visualizations.",
-      image: "/placeholder.svg",
+      image: "https://github.com/nitpatel678/pOrtFoLiO/blob/main/portfoilo/src/assets/blockchain.jpg?raw=true",
       tags: ["React", "Ethereum", "Three.js", "Solidity"],
       links: {
         demo: "https://example.com",
