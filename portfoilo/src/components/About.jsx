@@ -37,21 +37,13 @@ export default function About() {
             About Me
           </h2>
           <p className="text-white/80 mb-4 text-lg">
-            I'm a passionate full-stack developer with a keen eye for design and
-            a love for creating seamless user experiences. With over 5 years of
-            experience in the industry, I've worked on a variety of projects
-            ranging from small business websites to complex enterprise
-            applications.
+            I'm a results-driven full-stack developer with expertise in JavaScript, TypeScript, React, and Node.js. I focus on building scalable, high-performance applications with clean architectures and engaging user interfaces.
           </p>
           <p className="text-white/80 mb-4 text-lg">
-            My approach combines technical expertise with creative
-            problem-solving, allowing me to build solutions that are not only
-            functional but also aesthetically pleasing and intuitive to use.
+            With experience across frontend frameworks, backend APIs, and 3D interfaces using Three.js, I deliver solutions that blend performance, design, and usability. I’m passionate about building impactful software that solves real-world problems.
           </p>
           <p className="text-white/80 text-lg">
-            When I'm not coding, you can find me exploring new technologies,
-            contributing to open-source projects, or hiking in the great
-            outdoors.
+            Outside of work, I stay ahead of emerging technologies, contribute to open-source, and continuously refine my craft to push the boundaries of web development.
           </p>
 
           <motion.div
@@ -82,8 +74,7 @@ export default function About() {
             <div className="absolute inset-0 bg-gradient-to-tr from-white/10 to-transparent rounded-2xl transform -rotate-3"></div>
             <div className="relative h-full w-full rounded-2xl overflow-hidden border border-white/20">
               <img
-                src="https://github.com/nitpatel678/myportfolio/raw/main/src/Images/Protrait.png
-"
+                src="https://github.com/nitpatel678/myportfolio/raw/main/src/Images/Protrait.png"
                 alt="Nitin Patel"
                 className="h-full w-full object-cover"
               />

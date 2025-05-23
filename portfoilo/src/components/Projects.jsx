@@ -23,7 +23,7 @@ export default function Projects() {
       title: "Cortex (AI Agent)",
       description:
         "An AI-powered assistant that helps users generate blog posts, social media content, and marketing copy. Built with React, OpenAI API, and Firebase for authentication and database support.",
-      image: "https://github.com/nitpatel678/pOrtFoLiO/blob/main/portfoilo/src/assets/cortex.jpg?raw=true",
+      image: "https://github.com/nitpatel678/pOrtFoLiO/blob/main/portfoilo/src/assets/Screenshot%20(85).png?raw=true",
       tags: ["React", "OpenAI", "Firebase", "Tailwind CSS"],
       links: {
         demo: "https://example.com",
